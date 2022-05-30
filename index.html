@@ -25,7 +25,7 @@
         // カメラを作成
         const camera = new THREE.PerspectiveCamera(45, width / height);
         // カメラの初期座標を設定
-        camera.position.set(0, 0, 5);
+        camera.position.set(0, 0, 15);
 
         // カメラコントローラーを作成
         const controls = new THREE.OrbitControls(camera, document.body); 
@@ -37,7 +37,7 @@
         scene.add(directionalLight1);
         // 平行光源2
         var directionalLight2 = new THREE.DirectionalLight(0x888888);
-        directionalLight2.position.set(-10, -10, 10);
+        directionalLight2.position.set(10, -10, -10);
         // シーンに追加
         scene.add(directionalLight2);
 
@@ -73,13 +73,13 @@
         Cylinder.position.set(1.5,0,0);
         scene.add(Cylinder);*/
 
-        //円錐
+        /*円錐
         var geometry4 = new THREE.ConeGeometry( 1, 2, 0 );
         //var material = new THREE.MeshPhongMaterial( {color: 0xA80000} );
         //var cone = new THREE.Mesh( geometry, material );
         var cone = new THREE.Mesh(geometry4, mat);
         cone.position.set(0,0,0);
-        scene.add( cone );
+        scene.add( cone );*/
 
 
         //ドーナツ
